@@ -1,0 +1,134 @@
+.projects {
+  @extend %container;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
+
+  border: 1px solid #eeeeee;
+
+  background: $primery-bgc;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.project__link {
+  display: block;
+
+  margin: 0;
+  padding-bottom: 20px;
+
+  text-decoration: none;
+
+  box-shadow: none;
+  transition: box-shadow 250ms $time-distribution-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.projects__wrapper-description {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__wrapper-description::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: "";
+
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: opacity 250ms $time-distribution-function,
+    transform 250ms var $time-distribution-function;
+
+  .project__link:hover &,
+  .project__link:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.projects__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project__description {
+  position: absolute;
+
+  margin: 0;
+  padding: 0 24px;
+
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: $another-text-color;
+
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 250ms $time-distribution-function,
+    transform 250ms $time-distribution-function;
+
+  .project__link:hover &,
+  .project__link:focus & {
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.projects__wrapper-name {
+  margin: 0 24px;
+
+  width: 322px;
+}
+
+.project__name {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: $primary-text-color;
+}
+
+.project__category {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: $secondary-text-color;
+}

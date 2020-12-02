@@ -1,0 +1,10 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: $primery-bgc;
+}
+.header-wrapper {
+  @extend %container;
+  @extend %flex;
+
+  height: 80px;
+}

@@ -1,0 +1,14 @@
+.footer__logo {
+  @extend %logo;
+
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  color: $another-text-color;
+}
+
+.accent {
+  color: $accent-text-color;
+}

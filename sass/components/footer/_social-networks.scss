@@ -1,0 +1,38 @@
+.social__appeal {
+  @extend %footer-appeal;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 10px;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms $time-distribution-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+  }
+}
+
+.social__link-icon {
+  width: 20px;
+  height: 20px;
+
+  background-position: 50% 50%;
+  fill: $another-text-color;
+}

@@ -1,0 +1,85 @@
+.subscription__appeal {
+  @extend %footer-appeal;
+}
+
+.form-subscription {
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 570px;
+}
+
+.form-subscription__input {
+  margin-right: 10px;
+  padding: 15px 16px;
+
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: $another-text-color;
+  background-color: transparent;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form-subscription__button {
+  @extend %font-button;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 0;
+
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border: none;
+  border-radius: 4px;
+
+  color: $another-text-color;
+
+  background-color: $accent-bgc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms $time-distribution-function,
+    color 250ms $time-distribution-function;
+
+  &:hover,
+  &:focus {
+    background-color: $primery-bgc;
+    color: $accent-text-color;
+  }
+}
+
+.form-subscription__text {
+  margin-right: 10px;
+}
+
+.form-subscription__icon {
+  width: 24px;
+  height: 24px;
+
+  fill: $primery-bgc;
+
+  transition: fill 250ms $time-distribution-function;
+
+  .form-subscription__button:hover &,
+  .form-subscription__button:focus & {
+    fill: $accent-bgc;
+  }
+}
