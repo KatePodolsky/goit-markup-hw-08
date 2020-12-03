@@ -8,17 +8,27 @@
   </head>
 
   <body>
-      <header class="header">
-        <div class="header-wrapper">
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header__container">
+          <a href="index.html" class="header__logo"> <span class="accent">Web</span>Studio </a>
+          <button type="button" class="header__button-menu" aria-expanded="false" aria-controls="menu-container"
+            data-menu-button>
+            <svg class="header__icon-close-menu" aria-label="Переключатель мобильного меню">
+              <use class="icon-close-menu" href="./images/sprite.svg#icon-close-menu"></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__menu-container" id="menu-container" data-menu>
           <nav class="nav">
-            <a href="index.html" class="nav__logo"> <span class="accent">Web</span>Studio </a>
             <ul class="nav__list">
-              <li><a href="./index.html" class="nav__link">Студия</a></li>
-              <li><a href="./portfolio.html" class="nav__link nav__current">Портфолио</a></li>
+              <li><a href="./index.html" class="nav__link nav__studio">Студия</a></li>
+              <li><a href="./portfolio.html" class="nav__link nav__current nav__portfolio">Портфолио</a></li>
               <li><a href="#contacts" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
-          <address>
+          <address class="contact-container ">
             <a href="mailto:info@devstudio.com" class="header__contact header__mail">
               <svg class="mail-icon">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -31,7 +41,9 @@
               +38 096 111 11 11</a>
           </address>
         </div>
-      </header>
+      </div>
+    
+    </header>
     
     <main>
       <section class="portfolio">

@@ -1,7 +1,7 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 452px;
+  // padding: 200px 452px;
   height: 600px;
   max-width: 1600px;
 
@@ -22,16 +22,17 @@
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 118px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: $another-text-color;
-
-  /* outline: 2px solid tomato; */
 }
 
 .hero__button {

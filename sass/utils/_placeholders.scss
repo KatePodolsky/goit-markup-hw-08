@@ -5,9 +5,18 @@
 %container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1170px;
+  }
 }
 
 %logo {
@@ -28,9 +37,9 @@
 }
 
 %header-icon {
-  display: inline-flex;
+  // display: block;
   vertical-align: middle;
-  margin-right: 10px;
+  // margin-right: 10px;
   fill: currentColor;
   transition: fill 250ms $time-distribution-function;
 }
@@ -54,9 +63,9 @@
 }
 
 %section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;

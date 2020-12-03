@@ -1,16 +1,20 @@
 .subscription__appeal {
   @extend %footer-appeal;
+  text-align: center;
 }
 
 .form-subscription {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 
-  min-width: 570px;
+  width: 100%;
+
+  text-align: center;
 }
 
 .form-subscription__input {
   margin-right: 10px;
+  margin-bottom: 20px;
   padding: 15px 16px;
 
   width: 100%;
@@ -32,10 +36,10 @@
 
 .form-subscription__button {
   @extend %font-button;
-  display: inline-flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
+  // display: inline-flex;
+  // flex-direction: row-reverse;
+  // justify-content: center;
+  // align-items: center;
 
   padding: 10px 0;
 

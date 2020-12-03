@@ -1,13 +1,16 @@
 .footer {
-  padding: 60px 0;
-
   background-color: $footer-hero-bgc;
 }
 
 .footer__container {
   @extend %container;
 
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  padding: 60px 15px;
+  // display: flex;
+  // align-items: baseline;
+  // justify-content: space-between;
 }

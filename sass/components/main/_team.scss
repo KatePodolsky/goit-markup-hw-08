@@ -1,37 +1,42 @@
-.team__container {
-  padding: 94px 0;
-
+.team {
   background-color: $secondary-bgc;
+}
 
-  /* outline: 2px solid tomato; */
+.team__container {
+  @extend %container;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team__title {
   @extend %section-title;
 }
 
-.team__container-detail {
-  @extend %container;
-  padding-bottom: 30px;
-
-  /* outline: 2px solid tomato; */
-}
-
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .team__item {
-  padding-bottom: 30px;
+  margin-top: 30px;
+  padding-bottom: 24px;
 
   background: $primery-bgc;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  /* outline: 2px solid tomato; */
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
 }
 
 .team__name {

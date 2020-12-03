@@ -8,28 +8,39 @@
   </head>
   <body>
     <header class="header">
-     <div class="header-wrapper">
-      <nav class="nav">
-        <a href="index.html" class="nav__logo"> <span class="accent">Web</span>Studio </a>
-        <ul class="nav__list">
-          <li><a href="./index.html" class="nav__link nav__current">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-          <li><a href="#contacts" class="nav__link">Контакты</a></li>
-        </ul>
-      </nav>
-      <address>
-        <a href="mailto:info@devstudio.com" class="header__contact header__mail">
-          <svg class="mail-icon">
-            <use href="./images/sprite.svg#icon-envelope"></use>
-          </svg>
-          info@devstudio.com </a>
-        <a href="tel:+380961111111" class="header__contact">
-          <svg class="phone-icon">
-            <use href="./images/sprite.svg#icon-Vector"></use>
-          </svg>
-          +38 096 111 11 11</a>
-      </address>
+      <div class="header-wrapper">
+        <div class="header__container">
+          <a href="index.html" class="header__logo"> <span class="accent">Web</span>Studio </a>
+          <button type="button" class="header__button-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg class="header__icon-close-menu" aria-label="Переключатель мобильного меню">
+              <use class="icon-close-menu" href="./images/sprite.svg#icon-close-menu"></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
+      </div>
+      <div class="header__menu-container" id="menu-container" data-menu>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="./index.html" class="nav__link nav__current nav__studio">Студия</a></li>
+            <li><a href="./portfolio.html" class="nav__link nav__portfolio">Портфолио</a></li>
+            <li><a href="#contacts" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <address class="contact-container ">
+          <a href="mailto:info@devstudio.com" class="header__contact header__mail">
+            <svg class="mail-icon">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com </a>
+          <a href="tel:+380961111111" class="header__contact">
+            <svg class="phone-icon">
+              <use href="./images/sprite.svg#icon-Vector"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </address>
+      </div>
     </div>
+      
     </header>
     <main>
       <section class="hero">
@@ -99,7 +110,7 @@
         <div class="team__container-detail"> 
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img.jpg" alt="Фото Игоря Демьяненко" width="270" height="260" />
+              <img class="team-image" src="./images/img.jpg" alt="Фото Игоря Демьяненко"/>
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__position">Product Designer</p>
               <ul class="team__link-list">
@@ -127,7 +138,7 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img(1).jpg" alt="Фото Ольги Репиной" width="270" height="260" />
+              <img class="team-image" src="./images/img(1).jpg" alt="Фото Ольги Репиной"/>
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__position">Frontend Developer</p>
               <ul class="team__link-list">
@@ -155,7 +166,7 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img(2).jpg" alt="Фото Николая Тарасова" width="270" height="260" />
+              <img class="team-image" src="./images/img(2).jpg" alt="Фото Николая Тарасова"/>
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="team__link-list">
@@ -183,7 +194,7 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img(3).jpg" alt="Фото Михаила Ермакова" width="270" height="260" />
+              <img class="team-image" src="./images/img(3).jpg" alt="Фото Михаила Ермакова"/>
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="team__link-list">
@@ -215,46 +226,46 @@
       </div>
        
       </section>
-      <section class="clients customer">
+      <section class="clients">
         <div class="clients__container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="client__list">
-            <li>
+            <li class="client__item">
               <a href="" class="clients__link">
                 <svg class="clients__link-icon clients__client1">
                   <use href="./images/sprite.svg#icon-client1"></use>
                 </svg>
               </a>  
             </li>
-            <li>
+            <li class="client__item">
               <a href="" class="clients__link">
                 <svg class="clients__link-icon clients__client2">
                   <use href="./images/sprite.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a href="" class="clients__link">
                 <svg class="clients__link-icon clients__client3">
                   <use href="./images/sprite.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a href="" class="clients__link">
                 <svg class="clients__link-icon clients__client4">
                   <use href="./images/sprite.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a href="" class="clients__link">
                 <svg class="clients__link-icon clients__client5">
                   <use href="./images/sprite.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="client__item">
               <a href="" class="clients__link">
                 <svg class="clients__link-icon clients__client6">
                   <use href="./images/sprite.svg#icon-client6"></use>
@@ -356,7 +367,7 @@
         <label class="form__field" for="comment">Комментарий</label>
         <textarea class="form__comment" name="comment" rows="5"  id="comment" placeholder="Введите текст"></textarea>
         <label class="form__checkbox-agreement">
-            <input class="form__checkbox" type="checkbox" name="agreement" autocomplete="off">
+            <input class="form__checkbox" type="checkbox" name="agreement">
             <span class="form__checkbox-icon"></span>
             <span class="form__checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
             <a class="form__agreement" href=""> Условия договора</a>
@@ -366,5 +377,6 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   </body>
 </html>
