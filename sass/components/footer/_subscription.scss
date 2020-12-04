@@ -1,3 +1,9 @@
+.subscription {
+  @include change-size(tablet) {
+    width: 450px;
+  }
+}
+
 .subscription__appeal {
   @extend %footer-appeal;
   text-align: center;
@@ -68,6 +74,10 @@
     background-color: $primery-bgc;
     color: $accent-text-color;
   }
+
+  // @include change-size(tablet) {
+  //   display: block;
+  // }
 }
 
 .form-subscription__text {

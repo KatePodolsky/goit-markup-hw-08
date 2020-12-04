@@ -1,8 +1,10 @@
 .clients__container {
-  @extend %container;
-
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include change-size(tablet) {
+    padding-bottom: 30px;
+  }
 }
 
 .clients__title {
@@ -13,19 +15,32 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @include change-size(desktop) {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .client__list {
-  // @media screen and (max-width: 767px) {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  // justify-content: space-between;
+  @include change-size(tablet) {
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .client__item {
   margin: 15px;
   width: calc(100% / 2 - 30px);
+
+  @include change-size(tablet) {
+    width: calc((100% - 60px) / 3);
+    margin: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .clients__link {

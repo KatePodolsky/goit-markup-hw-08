@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header-wrapper container">
         <div class="header__container">
           <a href="index.html" class="header__logo"> <span class="accent">Web</span>Studio </a>
           <button type="button" class="header__button-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
@@ -39,17 +39,19 @@
             +38 096 111 11 11</a>
         </address>
       </div>
-    </div>
-      
+    </div> 
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+        <div class="hero__container container">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+        </div>
+        
       </section>
 
       <section class="advantages">
-        <div class="advantages__container"><h2 class="visually-hidden">Преимущества компании</h2>
+        <div class="container"><h2 class="visually-hidden">Преимущества компании</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item advantages__icon-antenna">
             <h3 class="advantages__title">Внимание к деталям</h3>
@@ -85,7 +87,7 @@
       </section>
 
       <section class="work">
-        <div class="work__container"><h2 class="work__title">Чем мы занимаемся</h2>
+        <div class="container"><h2 class="work__title">Чем мы занимаемся</h2>
         <ul class="work__list">
           <li class="work__item">
            
@@ -105,7 +107,7 @@
       </section>
 
       <section class="team">
-      <div class="team__container">
+      <div class="team__container container">
         <h2 class="team__title">Наша команда</h2>
         <div class="team__container-detail"> 
           <ul class="team__list">
@@ -227,7 +229,7 @@
        
       </section>
       <section class="clients">
-        <div class="clients__container">
+        <div class="clients__container container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="client__list">
             <li class="client__item">
@@ -278,8 +280,9 @@
     </main>
 
   <footer class="footer">
-    <div class="footer__container">
-      <div class="our-contacts">
+    <div class="footer__container container">
+      <div class="footer__wrapper" >
+        <div class="our-contacts">
         <a href="./index.html" class="footer__logo"><span class="accent">Web</span>Studio </a>
         <address id="contacts" class="footer__contacts">
           <span class="footer__address">г. Киев, пр-т Леси Украинки,26</span>
@@ -318,6 +321,8 @@
             </a></li>
         </ul>
       </div>
+    </div>
+    
       <div class="subscription">
         <p class="subscription__appeal"> Подпишитесь на рассылку </p>
         <form class="form-subscription">

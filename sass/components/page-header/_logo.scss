@@ -1,5 +1,11 @@
 .header__logo {
   @extend %logo;
+
+  @include change-size(tablet) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .accent {

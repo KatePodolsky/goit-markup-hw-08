@@ -1,15 +1,12 @@
 .footer__contacts {
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 60px;
 
   font-style: normal;
   text-align: center;
 
   color: rgba(255, 255, 255, 0.6);
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 
 .footer__address {

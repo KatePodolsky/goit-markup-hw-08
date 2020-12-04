@@ -17,10 +17,6 @@
     opacity: 0;
     pointer-events: none;
   }
-
-  // @media screen and (min-width: $tablet) {
-  //   padding: 208px 159px 207px 159px;
-  // }
 }
 
 .modal {
@@ -28,11 +24,8 @@
   padding: 40px;
 
   background-color: $primery-bgc;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
 
-  @media screen and (min-width: $mobile) {
+  @include change-size(mobile) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,16 +37,8 @@
     width: 100%;
   }
 
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms $time-distribution-function;
-
+  @include change-size(desktop) {
     max-width: 528px;
-    width: 100%;
   }
 
   .backdrop.is-hidden & {
@@ -99,7 +84,7 @@
   line-height: 1.5;
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include change-size(desktop) {
     line-height: 1.15;
   }
 }

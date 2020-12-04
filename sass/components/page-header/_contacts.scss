@@ -1,7 +1,18 @@
 .contact-container {
-  // opacity: 0;
-  // position: absolute;
   text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    text-align: left;
+  }
+
+  @include change-size(desktop) {
+    display: flex;
+  }
 }
 
 .header__contact {
@@ -20,6 +31,11 @@
   &:hover,
   &:focus {
     color: $accent-text-color;
+  }
+
+  @include change-size(tablet) {
+    padding-right: 15px;
+    font-size: 12px;
   }
 }
 

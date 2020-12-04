@@ -2,23 +2,6 @@
   font-family: inherit;
 }
 
-%container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-  }
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 1170px;
-  }
-}
-
 %logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -39,7 +22,7 @@
 %header-icon {
   // display: block;
   vertical-align: middle;
-  // margin-right: 10px;
+  margin-right: 10px;
   fill: currentColor;
   transition: fill 250ms $time-distribution-function;
 }
@@ -62,14 +45,6 @@
   transform: translate(-50%, -50%);
 }
 
-%section-title {
-  margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
 %footer-appeal {
   margin: 0;
   margin-bottom: 20px;

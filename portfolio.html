@@ -6,10 +6,9 @@
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/portfolio.min.css">
   </head>
-
   <body>
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header-wrapper container">
         <div class="header__container">
           <a href="index.html" class="header__logo"> <span class="accent">Web</span>Studio </a>
           <button type="button" class="header__button-menu" aria-expanded="false" aria-controls="menu-container"
@@ -42,7 +41,6 @@
           </address>
         </div>
       </div>
-    
     </header>
     
     <main>
@@ -57,7 +55,7 @@
               <li><button type="button" class="filter__button">Маркетинг</button></li>
             </ul>
           </div>
-            <div class="projects">
+            <div class="projects container">
               <ul class="projects__list">
                 <li class="projects__item"> 
                   <a href="" class="project__link">
@@ -190,59 +188,62 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="our-contacts">
-          <a href="./index.html" class="footer__logo"><span class="accent">Web</span>Studio </a>
-          <address id="contacts" class="footer__contacts">
-            <span class="footer__address">г. Киев, пр-т Леси Украинки,26</span>
-            <span class="footer__mail">26 info@example.com</span>
-            +38 099 111 11 11
-          </address>
-        </div>
-        <div class="social">
-          <p class="social__appeal"> присоединяйтесь </p>
-          <ul class="social__list">
-            <li>
-              <a class="social__link-item">
-                <svg class="social__link-icon">
-                  <use href="./images/sprite.svg#icon-instagram">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li><a class="social__link-item">
-                <svg class="social__link-icon">
-                  <use href="./images/sprite.svg#icon-twitter">
-                  </use>
-                </svg>
-              </a></li>
-            <li><a class="social__link-item">
-                <svg class="social__link-icon">
-                  <use href="./images/sprite.svg#icon-facebook">
-                  </use>
-                </svg>
-              </a></li>
-            <li><a class="social__link-item">
-                <svg class="social__link-icon">
-                  <use href="./images/sprite.svg#icon-linkedin">
-                  </use>
-                </svg>
-              </a></li>
-          </ul>
-        </div>
-        <div class="subscription">
-          <p class="subscription__appeal"> Подпишитесь на рассылку </p>
-          <form class="form-subscription">
-            <input class="form-subscription__input" type="email" name="email" placeholder="E-mail">
-            <button class="form-subscription__button">
-              <svg class="form-subscription__icon">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-              <span class="form-subscription__text">Подписаться</span></button>
-          </form>
-        </div>
+<footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__wrapper">
+      <div class="our-contacts">
+        <a href="./index.html" class="footer__logo"><span class="accent">Web</span>Studio </a>
+        <address id="contacts" class="footer__contacts">
+          <span class="footer__address">г. Киев, пр-т Леси Украинки,26</span>
+          <span class="footer__mail">26 info@example.com</span>
+          +38 099 111 11 11
+        </address>
       </div>
-    </footer>
+      <div class="social">
+        <p class="social__appeal"> присоединяйтесь </p>
+        <ul class="social__list">
+          <li>
+            <a class="social__link-item">
+              <svg class="social__link-icon">
+                <use href="./images/sprite.svg#icon-instagram">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li><a class="social__link-item">
+              <svg class="social__link-icon">
+                <use href="./images/sprite.svg#icon-twitter">
+                </use>
+              </svg>
+            </a></li>
+          <li><a class="social__link-item">
+              <svg class="social__link-icon">
+                <use href="./images/sprite.svg#icon-facebook">
+                </use>
+              </svg>
+            </a></li>
+          <li><a class="social__link-item">
+              <svg class="social__link-icon">
+                <use href="./images/sprite.svg#icon-linkedin">
+                </use>
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subscription">
+      <p class="subscription__appeal"> Подпишитесь на рассылку </p>
+      <form class="form-subscription">
+        <input class="form-subscription__input" type="email" name="email" placeholder="E-mail">
+        <button class="form-subscription__button">
+          <svg class="form-subscription__icon">
+            <use href="./images/sprite.svg#icon-send"></use>
+          </svg>
+          <span class="form-subscription__text">Подписаться</span></button>
+      </form>
+    </div>
+  </div>
+</footer>
   </body>
 </html>

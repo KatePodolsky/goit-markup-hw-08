@@ -3,16 +3,22 @@
   padding-bottom: 94px;
 }
 
-.work__container {
-  @extend %container;
-}
-
 .work__title {
-  @extend %section-title;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+
+  @include change-size(desktop) {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .work__list {
-  @media screen and (min-width: $desktop) {
+  @include change-size(desktop) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

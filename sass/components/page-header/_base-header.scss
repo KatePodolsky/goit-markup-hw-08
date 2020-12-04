@@ -1,10 +1,21 @@
 .header {
-  position: relative;
-
   border-bottom: 1px solid #ececec;
   background-color: $primery-bgc;
 }
+
 .header-wrapper {
-  @extend %container;
-  // @extend %flex;
+  height: 60px;
+  @include change-size(tablet) {
+    position: relative;
+    height: 80px;
+  }
+}
+
+.header__container {
+  @include change-size(mobile-only) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
 }

@@ -3,17 +3,22 @@
   margin-right: auto;
   padding-bottom: 40px;
 
-  @media screen and(min-width:$desktop) {
+  @include change-size(desktop) {
     padding-bottom: 34px;
   }
-
-  // width: 611px;
+  @include change-size(tablet) {
+    width: 611px;
+  }
 }
 
 .filter__list {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
+
+  @include change-size(tablet) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .filter__button {
@@ -52,5 +57,9 @@
   &:active {
     color: $primary-text-color;
     border: none;
+  }
+
+  @include change-size(tablet) {
+    margin-right: 0;
   }
 }

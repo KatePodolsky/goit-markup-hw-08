@@ -3,14 +3,24 @@
 }
 
 .footer__container {
-  @extend %container;
-
-  @media screen and (min-width: $mobile) {
-    width: 480px;
-  }
-
   padding: 60px 15px;
-  // display: flex;
+
   // align-items: baseline;
   // justify-content: space-between;
+
+  @include change-size(tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__wrapper {
+  @include change-size(tablet) {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+  }
 }

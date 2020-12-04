@@ -121,7 +121,7 @@
 
   color: $accent-text-color;
 
-  @media screen and (min-width: $desktop) {
+  @include change-size(desktop) {
     margin-left: 7px;
   }
 }
