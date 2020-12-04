@@ -20,6 +20,10 @@
     width: calc((100% - 30px) / 2);
   }
 
+  @include change-size(desktop) {
+    width: calc((100% - 90px) / 4);
+  }
+
   &::before {
     content: " ";
     display: block;

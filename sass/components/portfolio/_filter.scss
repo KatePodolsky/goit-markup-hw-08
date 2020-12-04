@@ -3,11 +3,12 @@
   margin-right: auto;
   padding-bottom: 40px;
 
-  @include change-size(desktop) {
-    padding-bottom: 34px;
-  }
   @include change-size(tablet) {
     width: 611px;
+  }
+
+  @include change-size(desktop) {
+    padding-bottom: 50px;
   }
 }
 
@@ -26,8 +27,6 @@
   margin-right: 8px;
   margin-bottom: 15px;
   padding: 6px 22px;
-
-  // min-width: 73px;
 
   font-weight: 500;
   font-size: 16px;
@@ -62,4 +61,9 @@
   @include change-size(tablet) {
     margin-right: 0;
   }
+  @include change-size(desktop) {
+    margin-bottom: 0;
+  }
+
+  margin-bottom: 15px;
 }

@@ -9,6 +9,10 @@
   text-align: center;
 
   color: $another-text-color;
+
+  @include change-size(desktop) {
+    text-align: left;
+  }
 }
 
 .accent {

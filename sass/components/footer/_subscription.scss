@@ -2,20 +2,30 @@
   @include change-size(tablet) {
     width: 450px;
   }
+
+  @include change-size(desktop) {
+    width: 570px;
+  }
 }
 
 .subscription__appeal {
   @extend %footer-appeal;
   text-align: center;
+
+  @include change-size(desktop) {
+    text-align: left;
+  }
 }
 
 .form-subscription {
-  // display: flex;
-  // justify-content: space-between;
-
   width: 100%;
 
   text-align: center;
+
+  @include change-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form-subscription__input {
@@ -38,14 +48,18 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @include change-size(desktop) {
+    width: 358px;
+  }
 }
 
 .form-subscription__button {
   @extend %font-button;
-  // display: inline-flex;
-  // flex-direction: row-reverse;
-  // justify-content: center;
-  // align-items: center;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 
   padding: 10px 0;
 
@@ -74,10 +88,6 @@
     background-color: $primery-bgc;
     color: $accent-text-color;
   }
-
-  // @include change-size(tablet) {
-  //   display: block;
-  // }
 }
 
 .form-subscription__text {

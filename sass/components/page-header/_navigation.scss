@@ -23,10 +23,6 @@
   }
 
   background-color: $primery-bgc;
-
-  @include change-size(tablet) {
-    // height: 100%;
-  }
 }
 
 .header__button-menu {
@@ -79,6 +75,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  @include change-size(desktop) {
+    left: 27%;
+    transform: translate(-27%, -50%);
+  }
 }
 
 .nav__list {
@@ -90,7 +91,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-right: 84px;
     width: 294px;
   }
 }
@@ -145,12 +145,7 @@
   }
 }
 
-.nav__studio {
-  @include change-size(mobile-only) {
-    margin-bottom: 52px;
-  }
-}
-
+.nav__studio,
 .nav__portfolio {
   @include change-size(mobile-only) {
     margin-bottom: 40px;

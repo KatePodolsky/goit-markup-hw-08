@@ -1,20 +1,19 @@
 .work {
-  display: none;
+  @include change-size(tablet-only) {
+    display: none;
+  }
+
   padding-bottom: 94px;
 }
 
 .work__title {
   margin: 0;
+  margin-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 28px;
-  line-height: 1.178;
+  font-size: 36px;
+  line-height: 1.167;
   text-align: center;
-
-  @include change-size(desktop) {
-    font-size: 36px;
-    line-height: 1.167;
-  }
 }
 
 .work__list {

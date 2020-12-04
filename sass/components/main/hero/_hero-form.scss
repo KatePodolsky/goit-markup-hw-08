@@ -113,6 +113,11 @@
   line-height: 1.167;
 
   color: $secondary-text-color;
+
+  @include change-size(desktop) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .form__agreement {

@@ -5,6 +5,11 @@
 .team__container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include change-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
@@ -40,6 +45,10 @@
 
   @include change-size(tablet) {
     width: calc((100% - 30px) / 2);
+  }
+
+  @include change-size(desktop) {
+    width: calc((100% - 90px) / 4);
   }
 }
 

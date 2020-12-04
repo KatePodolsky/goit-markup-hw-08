@@ -27,6 +27,10 @@
   @include change-size(tablet) {
     width: calc((100% - 30px) / 2);
   }
+
+  @include change-size(desktop) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .project__link {

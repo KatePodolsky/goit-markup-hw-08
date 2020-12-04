@@ -1,5 +1,9 @@
 .social {
   margin-bottom: 60px;
+
+  @include change-size(desktop) {
+    margin-left: 70px;
+  }
 }
 
 .social__appeal {

@@ -1,17 +1,17 @@
 .contact-container {
   text-align: center;
 
-  @media screen and (max-width: 1199px) {
+  @include change-size(tablet) {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-
     text-align: left;
   }
 
   @include change-size(desktop) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -37,11 +37,20 @@
     padding-right: 15px;
     font-size: 12px;
   }
+  @include change-size(desktop) {
+    font-size: 14px;
+    line-height: 1.143;
+  }
 }
 
 .header__mail {
-  margin-bottom: 16px;
-  //   // margin-right: 50px;
+  @include change-size(tablet-only) {
+    margin-bottom: 16px;
+  }
+
+  @include change-size(desktop) {
+    margin-right: 15px;
+  }
 }
 
 .mail-icon {
