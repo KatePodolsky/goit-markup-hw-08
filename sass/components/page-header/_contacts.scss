@@ -57,6 +57,7 @@
   @extend %header-icon;
   width: 16px;
   height: 12px;
+  transition: fill 250ms $time-distribution-function;
 
   .contact:hover &,
   .contact:focus & {
@@ -68,6 +69,7 @@
   @extend %header-icon;
   width: 10px;
   height: 16px;
+  transition: fill 250ms $time-distribution-function;
 
   .contact:hover &,
   .contact:focus & {

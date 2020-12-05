@@ -28,12 +28,12 @@
         </nav>
         <address class="contact-container">
           <a href="mailto:info@devstudio.com" class="header__contact header__mail">
-            <svg class="mail-icon">
+            <svg class="mail-icon" aria-label="Почтовый конверт">
               <use href="./images/sprite.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com </a>
           <a href="tel:+380961111111" class="header__contact">
-            <svg class="phone-icon">
+            <svg class="phone-icon" aria-label="Мобильный телефон">
               <use href="./images/sprite.svg#icon-Vector"></use>
             </svg>
             +38 096 111 11 11</a>
@@ -90,17 +90,42 @@
         <div class="container"><h2 class="work__title">Чем мы занимаемся</h2>
         <ul class="work__list">
           <li class="work__item">
-           
-            <img class="work__image" src="./images/box1.jpg" alt="Компьютер" width="370" height="294" />
+            <picture>
+              <source
+                srcset="./images/work-image/1work-370.webp 1x, ./images/work-image/1work-370@2x.webp 2x, ./images/work-image/1work-370@3x.webp 3x"
+                media=(min-width:1200px) type="image/webp" />
+      
+              <source
+                srcset="./images/work-image/1work-370.jpg 1x, ./images/work-image/1work-370@2x.jpg 2x, ./images/work-image/1work-370@3x.jpg 3x"
+                media=(min-width:1200px) />
+              <img class="work__image" src="./images/work-image/1work-370.jpg" alt="Компьютер" width="370"/>
+            </picture>
             <p class="work__name">Десктопные приложения</p>
-           
           </li>
           <li class="work__item">
-            <img class="work__image" src="./images/box2.jpg" alt="Телефон" width="370" height="294" />
+            <picture>
+              <source
+                srcset="./images/work-image/2work-370.webp 1x, ./images/work-image/2work-370@2x.webp 2x, ./images/work-image/2work-370@3x.webp 3x"
+                media=(min-width:1200px) type="image/webp" />
+            
+              <source
+                srcset="./images/work-image/2work-370.jpg 1x, ./images/work-image/2work-370@2x.jpg 2x, ./images/work-image/2work-370@3x.jpg 3x"
+                media=(min-width:1200px) />
+              <img class="work__image" src="./images/work-image/2work-370.jpg" alt="Телефон" width="370"/>
+            </picture>
             <p class="work__name">Мобильные приложения</p>
           </li>
           <li class="work__item">
-            <img class="work__image" src="./images/box3.jpg" alt="Планшет" width="370" height="294" />
+            <picture>
+              <source
+                srcset="./images/work-image/3work-370.webp 1x, ./images/work-image/3work-370@2x.webp 2x, ./images/work-image/3work-370@3x.webp 3x"
+                media=(min-width:1200px) type="image/webp"/>
+            
+              <source
+                srcset="./images/work-image/3work-370.jpg 1x, ./images/work-image/3work-370@2x.jpg 2x, ./images/work-image/3work-370@3x.jpg 3x"
+                media=(min-width:1200px) />
+              <img class="work__image" src="./images/work-image/3work-370.jpg" alt="Планшет" width="370"/>
+            </picture>
             <p class="work__name">Дизайнерские решения</p>
           </li>
         </ul></div>
@@ -112,112 +137,194 @@
         <div class="team__container-detail"> 
           <ul class="team__list">
             <li class="team__item">
-              <img class="team-image" src="./images/img.jpg" alt="Фото Игоря Демьяненко"/>
+              <picture>
+                <source
+                  srcset="./images/team_foto/1foto-270.webp 1x, ./images/team_foto/1foto-270@2x.webp 2x, ./images/team_foto/1foto-270@3x.webp 3x"
+                  media=(min-width:1200px) type="image/webp"/>
+                <source
+                  srcset="./images/team_foto/1foto-354.webp 1x, ./images/team_foto/1foto-354@2x.webp 2x, ./images/team_foto/1foto-354@3x.webp 3x"
+                  media=(min-width:768px) type="image/webp"/>
+                <source
+                  srcset="./images/team_foto/1foto-450.webp 1x, ./images/team_foto/1foto-450@2x.webp 2x, ./images/team_foto/1foto-450@3x.webp 3x"
+                  media=(min-width:320px) type="image/webp"/>
+                <source
+                  srcset="./images/team_foto/1foto-270.jpg 1x, ./images/team_foto/1foto-270@2x.jpg 2x, ./images/team_foto/1foto-270@3x.jpg 3x"
+                  media=(min-width:1200px) />
+                <source
+                  srcset="./images/team_foto/1foto-354.jpg 1x, ./images/team_foto/1foto-354@2x.jpg 2x, ./images/team_foto/1foto-354@3x.jpg 3x"
+                  media=(min-width:768px) />
+                <source srcset="./images/team_foto/1foto-450.jpg 1x, ./images/team_foto/1foto-450@2x.jpg 2x, ./images/team_foto/1foto-450@3x.jpg 3x" media=(min-width:320px) />
+                <img class="team-image" src="./images/team_foto/1foto-270.jpg" width="450" alt="Фото Игоря Демьяненко"/>
+              </picture>
+
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__position">Product Designer</p>
               <ul class="team__link-list">
                 <li>
                   <a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Инстаграмм">
                       <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Твиттер">
                       <use href="./images/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Фейсбук">
                       <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Линкидин">
                       <use href="./images/sprite.svg#icon-linkedin"></use>
                     </svg>
                   </a></li>
               </ul>
             </li>
             <li class="team__item">
-              <img class="team-image" src="./images/img(1).jpg" alt="Фото Ольги Репиной"/>
+              <picture>
+                <source
+                  srcset="./images/team_foto/2foto-270.webp 1x, ./images/team_foto/2foto-270@2x.webp 2x, ./images/team_foto/2foto-270@3x.webp 3x"
+                  media=(min-width:1200px) type="image/webp" />
+                <source
+                  srcset="./images/team_foto/2foto-354.webp 1x, ./images/team_foto/2foto-354@2x.webp 2x, ./images/team_foto/2foto-354@3x.webp 3x"
+                  media=(min-width:768px) type="image/webp" />
+                <source
+                  srcset="./images/team_foto/2foto-450.webp 1x, ./images/team_foto/2foto-450@2x.webp 2x, ./images/team_foto/2foto-450@3x.webp 3x"
+                  media=(min-width:320px) type="image/webp" />
+              
+                <source
+                  srcset="./images/team_foto/2foto-270.jpg 1x, ./images/team_foto/2foto-270@2x.jpg 2x, ./images/team_foto/2foto-270@3x.jpg 3x"
+                  media=(min-width:1200px) />
+                <source
+                  srcset="./images/team_foto/2foto-354.jpg 1x, ./images/team_foto/2foto-354@2x.jpg 2x, ./images/team_foto/2foto-354@3x.jpg 3x"
+                  media=(min-width:768px) />
+                <source
+                  srcset="./images/team_foto/2foto-450.jpg 1x, ./images/team_foto/2foto-450@2x.jpg 2x, ./images/team_foto/2foto-450@3x.jpg 3x"
+                  media=(min-width:320px) />
+                <img class="team-image" src="./images/team_foto/2foto-270.jpg" width="450" alt="Фото Ольги Репиной" />
+              </picture>
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__position">Frontend Developer</p>
               <ul class="team__link-list">
                 <li>
                   <a href="" class="team__link-item">
-                  <svg class="team__link-icon">
+                  <svg class="team__link-icon" aria-label="Инстаграмм">
                     <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                  <svg class="team__link-icon">
+                  <svg class="team__link-icon" aria-label="Твиттер">
                     <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a></li>
                 <li><a href="" class="team__link-item">
-                  <svg class="team__link-icon">
+                  <svg class="team__link-icon" aria-label="Фейсбук">
                     <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a></li>
                 <li><a href="" class="team__link-item">
-                  <svg class="team__link-icon">
+                  <svg class="team__link-icon" aria-label="Линкидин">
                     <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a></li>
               </ul>
             </li>
             <li class="team__item">
-              <img class="team-image" src="./images/img(2).jpg" alt="Фото Николая Тарасова"/>
+            <picture>
+              <source
+                srcset="./images/team_foto/3foto-270.webp 1x, ./images/team_foto/3foto-270@2x.webp 2x, ./images/team_foto/3foto-270@3x.webp 3x"
+                media=(min-width:1200px) type="image/webp" />
+              <source
+                srcset="./images/team_foto/3foto-354.webp 1x, ./images/team_foto/3foto-354@2x.webp 2x, ./images/team_foto/3foto-354@3x.webp 3x"
+                media=(min-width:768px) type="image/webp" />
+              <source
+                srcset="./images/team_foto/3foto-450.webp 1x, ./images/team_foto/3foto-450@2x.webp 2x, ./images/team_foto/3foto-450@3x.webp 3x"
+                media=(min-width:320px) type="image/webp" />
+            
+              <source
+                srcset="./images/team_foto/3foto-270.jpg 1x, ./images/team_foto/3foto-270@2x.jpg 2x, ./images/team_foto/3foto-270@3x.jpg 3x"
+                media=(min-width:1200px) />
+              <source
+                srcset="./images/team_foto/3foto-354.jpg 1x, ./images/team_foto/3foto-354@2x.jpg 2x, ./images/team_foto/3foto-354@3x.jpg 3x"
+                media=(min-width:768px) />
+              <source
+                srcset="./images/team_foto/3foto-450.jpg 1x, ./images/team_foto/3foto-450@2x.jpg 2x, ./images/team_foto/3foto-450@3x.jpg 3x"
+                media=(min-width:320px) />
+              <img class="team-image" src="./images/team_foto/3foto-270.jpg" width="450" alt="Фото Николая Тарасова" />
+            </picture>
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="team__link-list">
                 <li>
                   <a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Инстаграмм">
                       <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Твиттер">
                       <use href="./images/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Фейсбук">
                       <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Линкидин">
                       <use href="./images/sprite.svg#icon-linkedin"></use>
                     </svg>
                   </a></li>
               </ul>
             </li>
             <li class="team__item">
-              <img class="team-image" src="./images/img(3).jpg" alt="Фото Михаила Ермакова"/>
+              <picture>
+                <source
+                  srcset="./images/team_foto/4foto-270.webp 1x, ./images/team_foto/4foto-270@2x.webp 2x, ./images/team_foto/4foto-270@3x.webp 3x"
+                  media=(min-width:1200px) type="image/webp" />
+                <source
+                  srcset="./images/team_foto/4foto-354.webp 1x, ./images/team_foto/4foto-354@2x.webp 2x, ./images/team_foto/4foto-354@3x.webp 3x"
+                  media=(min-width:768px) type="image/webp" />
+                <source
+                  srcset="./images/team_foto/4foto-450.webp 1x, ./images/team_foto/4foto-450@2x.webp 2x, ./images/team_foto/4foto-450@3x.webp 3x"
+                  media=(min-width:320px) type="image/webp" />
+              
+                <source
+                  srcset="./images/team_foto/4foto-270.jpg 1x, ./images/team_foto/4foto-270@2x.jpg 2x, ./images/team_foto/4foto-270@3x.jpg 3x"
+                  media=(min-width:1200px) />
+                <source
+                  srcset="./images/team_foto/4foto-354.jpg 1x, ./images/team_foto/4foto-354@2x.jpg 2x, ./images/team_foto/4foto-354@3x.jpg 3x"
+                  media=(min-width:768px) />
+                <source
+                  srcset="./images/team_foto/4foto-450.jpg 1x, ./images/team_foto/4foto-450@2x.jpg 2x, ./images/team_foto/4foto-450@3x.jpg 3x"
+                  media=(min-width:320px) />
+                <img class="team-image" src="./images/team_foto/4foto-270.jpg" width="450" alt="Фото Михаила Ермакова" />
+              </picture>
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="team__link-list">
                 <li>
                   <a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Инстаграмм">
                       <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Твиттер">
                       <use href="./images/sprite.svg#icon-twitter"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Фейсбук">
                       <use href="./images/sprite.svg#icon-facebook"></use>
                     </svg>
                   </a></li>
                 <li><a href="" class="team__link-item">
-                    <svg class="team__link-icon">
+                    <svg class="team__link-icon" aria-label="Линкидин">
                       <use href="./images/sprite.svg#icon-linkedin"></use>
                     </svg>
                   </a></li>
@@ -234,42 +341,42 @@
           <ul class="client__list">
             <li class="client__item">
               <a href="" class="clients__link">
-                <svg class="clients__link-icon clients__client1">
+                <svg class="clients__link-icon clients__client1" aria-label="Логотип компании">
                   <use href="./images/sprite.svg#icon-client1"></use>
                 </svg>
               </a>  
             </li>
             <li class="client__item">
               <a href="" class="clients__link">
-                <svg class="clients__link-icon clients__client2">
+                <svg class="clients__link-icon clients__client2" aria-label="Логотип компании">
                   <use href="./images/sprite.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="" class="clients__link">
-                <svg class="clients__link-icon clients__client3">
+                <svg class="clients__link-icon clients__client3" aria-label="Логотип компании">
                   <use href="./images/sprite.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="" class="clients__link">
-                <svg class="clients__link-icon clients__client4">
+                <svg class="clients__link-icon clients__client4" aria-label="Логотип компании">
                   <use href="./images/sprite.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="" class="clients__link">
-                <svg class="clients__link-icon clients__client5">
+                <svg class="clients__link-icon clients__client5" aria-label="Логотип компании">
                   <use href="./images/sprite.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
             <li class="client__item">
               <a href="" class="clients__link">
-                <svg class="clients__link-icon clients__client6">
+                <svg class="clients__link-icon clients__client6" aria-label="Логотип компании">
                   <use href="./images/sprite.svg#icon-client6"></use>
                 </svg>
               </a>
@@ -295,26 +402,26 @@
         <ul class="social__list">
           <li>
             <a class="social__link-item">
-              <svg class="social__link-icon">
+              <svg class="social__link-icon" aria-label="Инстаграмм">
                 <use href="./images/sprite.svg#icon-instagram">
                 </use>
               </svg>
             </a>
           </li>
           <li><a class="social__link-item">
-              <svg class="social__link-icon">
+              <svg class="social__link-icon" aria-label="Твиттер">
                 <use href="./images/sprite.svg#icon-twitter">
                 </use>
               </svg>
             </a></li>
           <li><a class="social__link-item">
-              <svg class="social__link-icon">
+              <svg class="social__link-icon" aria-label="Фейсбук">
                 <use href="./images/sprite.svg#icon-facebook">
                 </use>
               </svg>
             </a></li>
           <li><a class="social__link-item">
-              <svg class="social__link-icon">
+              <svg class="social__link-icon" aria-label="Линкидин">
                 <use href="./images/sprite.svg#icon-linkedin">
                 </use>
               </svg>
@@ -328,7 +435,7 @@
         <form class="form-subscription">
           <input class="form-subscription__input" type="email" name="email" placeholder="E-mail">
           <button class="form-subscription__button">
-            <svg class="form-subscription__icon">
+            <svg class="form-subscription__icon" aria-label="Бумажный самолет">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
             <span class="form-subscription__text">Подписаться</span></button>
@@ -339,7 +446,7 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__close" data-modal-close>
-        <svg class="icon-close">
+        <svg class="icon-close" aria-label="Иконка закрытия крест">
           <use href="./images/sprite.svg#icon-close">
           </use>
         </svg>
@@ -348,14 +455,14 @@
       <form class="form">
         <label class="form__field">
           <span class="form__label">Имя</span>
-          <svg class="form__icon">
+          <svg class="form__icon" aria-label="Иконка человека">
             <use href="./images/sprite.svg#icon-person-black">
             </use>
           </svg>
           <input class="form__info" type="text" name="name" autocomplete="off">
         </label>
         <label class="form__field"><span class="form-label">Телефон</span>
-          <svg class="form__icon">
+          <svg class="form__icon" aria-label="Телефонная трубка">
             <use href="./images/sprite.svg#icon-phone-black">
             </use>
           </svg>
@@ -363,7 +470,7 @@
         </label>
         <label class="form__field">
           <span class="form__label">Почта</span>
-          <svg class="form__icon">
+          <svg class="form__icon" aria-label="Почтовый конверт">
             <use href="./images/sprite.svg#icon-email-black">
             </use>
           </svg>
